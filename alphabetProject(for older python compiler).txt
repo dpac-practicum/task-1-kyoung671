@@ -1,0 +1,14 @@
+intNum = 0
+for strLetter in range(ord('a'), ord('z')+1):
+    intNum += 1
+    if intNum % 5 != 0:
+       if "{letter}".format(letter=chr(strLetter)) == 'a' or "{letter}".format(letter=chr(strLetter)) == 'e' or "{letter}".format(letter=chr(strLetter)) == 'i' or "{letter}".format(letter=chr(strLetter)) == 'o' or "{letter}".format(letter=chr(strLetter)) == 'u':
+            print("{letter}{letter}\n".format(letter=chr(strLetter)))
+
+       else:
+            print("{letter}\n".format(letter=chr(strLetter)))
+    else:
+        if "{letter}".format(letter=chr(strLetter)) == 'a' or "{letter}".format(letter=chr(strLetter)) == 'e' or "{letter}".format(letter=chr(strLetter)) == 'i' or "{letter}".format(letter=chr(strLetter)) == 'o' or "{letter}".format(letter=chr(strLetter)) == 'u':
+            print("{letter}{letter}\n".format(letter=chr(strLetter).upper()))
+        else:
+            print("{letter}\n".format(letter=chr(strLetter)))
