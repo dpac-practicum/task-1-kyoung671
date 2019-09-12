@@ -1,0 +1,20 @@
+#Kristoffer C. Young
+#GitHub Project for Sky
+#9/12/2019
+
+intNum = 0
+for strLetter in range(ord('a'), ord('z')+1):
+    intNum += 1
+    if intNum % 5 != 0:
+       if (f"{chr(strLetter)}") == 'a' or (f"{chr(strLetter)}") == 'e' or (f"{chr(strLetter)}") == 'i' or (f"{chr(strLetter)}") == 'o' or (f"{chr(strLetter)}") == 'u':
+            print(f"{chr(strLetter)}", end = "")
+            print(f"{chr(strLetter)}\n", end = "")
+       else:
+            print(f"{chr(strLetter)}\n", end = "")
+    else:
+        if (f"{chr(strLetter)}") == 'a' or (f"{chr(strLetter)}") == 'e' or (f"{chr(strLetter)}") == 'i' or (f"{chr(strLetter)}") == 'o' or (f"{chr(strLetter)}") == 'u':
+            print(f"{chr(strLetter).upper()}", end = "")
+            print(f"{chr(strLetter).upper()}\n", end = "")
+        else:
+            print(f"{chr(strLetter).upper()}\n", end = "")
+
