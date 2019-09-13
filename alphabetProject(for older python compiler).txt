@@ -11,4 +11,4 @@ for strLetter in range(ord('a'), ord('z')+1):
         if "{letter}".format(letter=chr(strLetter)) == 'a' or "{letter}".format(letter=chr(strLetter)) == 'e' or "{letter}".format(letter=chr(strLetter)) == 'i' or "{letter}".format(letter=chr(strLetter)) == 'o' or "{letter}".format(letter=chr(strLetter)) == 'u':
             print("{letter}{letter}\n".format(letter=chr(strLetter).upper()))
         else:
-            print("{letter}\n".format(letter=chr(strLetter)))
+            print("{letter}\n".format(letter=chr(strLetter).upper()))
